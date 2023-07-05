@@ -6,10 +6,14 @@
     // Verifique qual é o meio de transporte mais barato e apresente em tela, especificando quanto custará para ir e voltar do trabalho diariamente.
 
     //Entrada
-
+    const preçolitro = Number(prompt(`Quanto custa o litro do combustível?`));
+    const quantidade = Number(prompt(`Qual é a quantidade utilizada para se deslocar para o trabalho?`));
+    const publico = Number(prompt(`Qual é o preço que você pagaria para se deslocar com o transporte público?`));
 
     //Processamento
-
+    let gastoCombustivel = preçolitro * quantidade * 2;
+    let gastoOnibus = publico * 2
+    (gastoCombustivel > gastoOnibus) ? alert(`Se deslocar com o transporte ppublico fica mais barato R$${gastoOnibus}`) : alert(`Se deslocar com o carro fica mais barato R$ ${gastoCombustivel}`);
     
     //Saída
 
